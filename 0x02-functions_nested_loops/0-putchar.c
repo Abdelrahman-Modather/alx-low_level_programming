@@ -1,11 +1,18 @@
-#include <stdio.h>
+#include "_putchar.h"
 /**
  * main - Entry point
  *
  * Return: Alway 0 (Sucess)
  */
+
 int main(void)
 {
-	putchar("\n_putchar\n");
+	char *h = "_putchar\n";
+
+	while (*h)
+	{
+		_putchar(*h);
+		h++;
+	}
 	return (0);
 }
